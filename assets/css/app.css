@@ -226,6 +226,10 @@ header .button {
 	margin: 0;
 	border: 0;
 }
+header .nav__wrap .open__nav,
+header .nav__wrap nav ul li.contact {
+	display: none;
+}
 
 /* hero
 -------------------------------------------------------- */
@@ -271,7 +275,7 @@ header .button {
 }
 .hero .container .hero__image {
 	max-width: 750px;
-	width: 100%;
+	width: 54%;
 	order: 2;
 }
 .hero .container .hero__content {
@@ -328,10 +332,10 @@ header .button {
 #services .services__list li {
 	position: relative;
 	padding: 50px 20px;
-	margin-right: 33px;
+	margin-right: 2.9%;
 	float: left;
 	max-width: 260px;
-	width: 100%;
+	width: 22.8%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -399,10 +403,9 @@ header .button {
 }
 #about .about__wrap img {
 	order: 2;
-	margin-left: 60px;
-	float: right;
+	margin-left: 5.5%;
 	max-width: 545px;
-	width: 100%;
+	width: 48%;
 }
 
 /* portfolio
@@ -436,9 +439,11 @@ header .button {
 	justify-content: center;
 	margin-bottom: 30px;
 }
+.filter__buttons li {
+	margin: 0 25px;
+}
 .filter__buttons li a {
 	display: block;
-	margin: 0 25px;
 	color: #131415;
 	text-transform: uppercase;
 	transition: all .3s ease;
@@ -458,7 +463,7 @@ header .button {
 .portfolio__wrap .portfolio__item {
 	margin: 0 2.6% 2.6% 0;
 	max-width: 360px;
-	width: 100%;
+	width: 31.6%;
 }
 .portfolio__wrap .portfolio__item:nth-child(3n) {
 	margin-right: 0;
@@ -741,23 +746,25 @@ header .button {
 	justify-content: space-between;
 	padding: 70px 0;
 	margin-bottom: 80px;
-	background: url(../images/testimonials__bg.png) no-repeat right 120px center / contain;
+	background: url(../images/testimonials__bg.png) no-repeat right 27% center / contain;
 }
 #testimonials .testimonials__slider {
-	max-width: 640px;
-	width: 100%;
-}
-#testimonials .testimonials__slider .bx-wrapper {
-	position: static;
 	padding: 50px;
-	margin-bottom: 0;
+	max-width: 640px;
+	width: 57%;
+	background-color: #fff;
 	box-shadow: 5px 8px 30px 2px rgba(42, 67, 113, 0.15);
-	border: 0;
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	-ms-border-radius: 15px;
 	-o-border-radius: 15px;
+}
+#testimonials .testimonials__slider .bx-wrapper {
+	position: static;
+	margin-bottom: 0;
+	box-shadow: none;
+	border: 0;
 }
 #testimonials .testimonials__slider .bx-wrapper .bx-controls {
 	position: absolute;
@@ -770,7 +777,6 @@ header .button {
 	float: left;
 	height: 30px;
 	width: 30px;
-	background-color: #fff;
 	box-shadow: 5px 8px 30px 2px rgba(42, 67, 113, 0.15);
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -786,9 +792,11 @@ header .button {
 #testimonials .testimonials__slider .bx-wrapper .bx-controls-direction a.bx-prev {
 	margin-right: 15px;
 	background: url(../images/prev__icon.png) no-repeat center / 10px;
+	background-color: #fff;
 }
 #testimonials .testimonials__slider .bx-wrapper .bx-controls-direction a.bx-next {
 	background: url(../images/next__icon.png) no-repeat center / 10px;
+	background-color: #fff;
 }
 #testimonials .testimonials__slider .bx-wrapper .bx-controls-direction a:hover {
 	box-shadow: none;
@@ -899,7 +907,8 @@ header .button {
 	left: 0;
 	right: 0;
 	bottom: -110px;
-	height: 565px;
+	max-height: 565px;
+	height: 100%;
 	background: url(../images/contact__bg03.png) no-repeat top center / cover;
 	z-index: -1;
 }
@@ -1026,4 +1035,551 @@ footer .copyright {
 	color: #fff;
 	text-align: center;
 	border-top: 1px solid rgba(236, 243, 252, 0.3);;
+}
+
+
+
+@media screen and ( max-width : 1040px ) {
+	/* common
+	-------------------------------------------------------- */
+	.button {
+		max-width: 160px;
+	}
+
+	/* header
+	-------------------------------------------------------- */
+	header .logo {
+		max-width: 145px;
+	}
+	header nav ul li {
+		margin: 0 15px;
+	}
+}
+
+@media screen and ( max-width : 1000px ) {
+	/* team
+	-------------------------------------------------------- */
+	#team .team__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#team .team__wrap .team__item {
+		width: 48%;
+		margin: 0 2.5% 13% 0;
+	}
+	#team .team__wrap .team__item:nth-child(2n) {
+		margin-right: 0;
+	}
+	#team .team__wrap .team__item:nth-child(2),
+	#team .team__wrap .team__item:nth-child(3),
+	#team .team__wrap .team__item:nth-child(4) {
+		margin-top: 0;
+	}
+	#team .team__wrap .team__item .team__info {
+		bottom: -50px;
+		padding: 20px 20px 25px;
+	}
+	#team .team__wrap .team__item .team__info .team__name {
+		font-size: 140%;
+	}
+	#team .team__wrap .team__item .team__info .team__pos {
+		font-size: 80%;
+	}
+	#team .team__wrap .team__item:last-child {
+		margin-bottom: 0;
+	}
+
+	/* testimonials
+	-------------------------------------------------------- */
+	#testimonials .statistics {
+		padding: 40px;
+	}
+	#testimonials .statistics .stats__list li .stats__number {
+		font-size: 400%;
+	}
+}
+
+@media screen and ( max-width : 980px ) {
+	/* common
+	-------------------------------------------------------- */
+
+
+	/* header
+	-------------------------------------------------------- */
+	header .container {
+		position: relative;
+		display: block;
+		padding: 25px 30px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	header .container::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	header .button {
+		display: none;
+	}
+	header .nav__wrap {
+		float: right;
+	}
+	header .logo {
+		float: left;
+	}
+	header .nav__wrap .open__nav,
+	header .nav__wrap nav ul li.contact {
+		display: block;
+	}
+
+	header .nav__wrap .open__nav {
+		padding: 9px 0;
+		margin-top: 15px;
+		border: 0;
+		outline: 0;
+		cursor: pointer;
+		background-color: transparent;
+	}
+	header .nav__wrap .open__nav span {
+		position: relative;
+		display: block;
+		height: 2px;
+		width: 20px;
+		background-color: #fff;
+		border: 0;
+	}
+	header .nav__wrap .open__nav span:nth-child(2) {
+		width: 20px;
+		margin: 8px 0;
+	}
+	header .nav__wrap .open__nav span::before,
+	header .nav__wrap .open__nav span::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		height: 2px;
+		width: 30px;
+		background-color: #fff;
+	}
+	header .nav__wrap .open__nav span::before {
+		top: -9px;
+	}
+	header .nav__wrap .open__nav span::after {
+		bottom: -9px;
+	}
+	header nav {
+		position: absolute;
+		top: 95px;
+		left: 0;
+		right: 0;
+		display: none;
+		padding: 20px 30px;
+		background-color: #f0f6ff;
+	}
+	header nav ul li {
+		margin: 0;
+		float: none;
+	}
+	header nav ul li a {
+		padding: 10px 0;
+		color: #131415;
+		text-align: left;
+	}
+	header nav ul li a::before {
+		bottom: 0;
+		height: 2px;
+	}
+
+	/* hero
+	-------------------------------------------------------- */
+	.hero {
+		padding-top: 80px;
+	}
+	.hero .container {
+		padding: 60px 0 150px;
+	}
+	.hero .container .hero__content .hero__title {
+		font-size: 300%;
+	}
+	.hero .container .hero__content .hero_logo {
+		max-width: 225px;
+	}
+	.hero .container .hero__content p {
+		font-size: 110%;
+	}
+}
+
+@media screen and ( max-width : 768px ) {
+	/* common
+	-------------------------------------------------------- */
+	body {
+		font-size: 95%;
+	}
+	section,
+	.section__style01 {
+		padding: 60px 0;
+	}
+	.main__title {
+		margin-bottom: 15px;
+		font-size: 200%;
+	}
+	.main__title .title__small {
+		font-size: 50%;
+	}
+	.button {
+		padding: 10px;
+		margin-top: 20px;
+		max-width: 150px;
+	}
+
+	/* header
+	-------------------------------------------------------- */
+	header .container {
+		padding: 20px;
+	}
+	header .logo {
+		max-width: 125px;
+	}
+	header .nav__wrap .open__nav {
+		margin-top: 10px;
+	}
+	header .nav__wrap .open__nav span::before,
+	header .nav__wrap .open__nav span::after {
+		width: 25px;
+	}
+	header nav {
+		top: 80px;
+		padding: 20px;
+	}
+	header nav ul li,
+	header nav ul li:first-child {
+		margin: 0;
+	}
+	header nav ul li a {
+		padding: 0 0 5px;
+		margin-bottom: 15px;
+	}
+	header nav ul li:last-child a {
+		margin-bottom: 0;
+	}
+
+	/* hero
+	-------------------------------------------------------- */
+	.hero .container {
+		display: block;
+		padding-top: 30px;
+	}
+	.hero .container .hero__image {
+		margin-bottom: 50px;
+		width: 100%;
+	}
+	.hero .container .hero__content .hero__title {
+		font-size: 280%;
+		text-align: center;
+	}
+	.hero .container .hero__content .hero_logo {
+		margin: 0 auto 30px;
+		max-width: 165px;
+	}
+	.hero .container .hero__content p {
+		font-size: 100%;
+		text-align: center;
+	}
+	.hero .container .hero__content .button {
+		margin: 20px auto 0;
+	}
+
+	/* services
+	-------------------------------------------------------- */
+	#services {
+		padding-bottom: 60px;
+	}
+	#services .services__list li {
+		padding: 35px 20px;
+		max-width: none;
+		width: 48.5%;
+	}
+	#services .services__list li:nth-child(2) {
+		margin-right: 0;
+	}
+	#services .services__list li:nth-child(even) {
+		margin-top: 25px;
+	}
+	#services .services__list li .image__wrap {
+		margin-bottom: 10px;
+		height: 65px;
+		width: 65px;
+	}
+	#services .services__list li .image__wrap img {
+		width: 35px;
+	}
+
+	/* about
+	-------------------------------------------------------- */
+	#about .about__wrap {
+		display: block;
+	}
+	#about .about__wrap img {
+		margin: 0 auto 20px;
+		max-width: none;
+		width: 100%;
+	}
+
+	/* portfolio
+	-------------------------------------------------------- */
+	#portfolio {
+		padding: 120px 0;
+	}
+	.filter__buttons {
+		margin-bottom: 20px;
+	}
+	.filter__buttons li {
+		margin: 0 7px;
+	}
+	.filter__buttons li a {
+		text-align: center;
+	}
+	.portfolio__wrap .portfolio__item a .project__info {
+		padding: 15px;
+	}
+	.portfolio__wrap .portfolio__item a .project__info .project__title {
+		font-size: 100%;
+	}
+
+	/* testimonials
+	-------------------------------------------------------- */
+	#testimonials {
+		padding-top: 90px;
+	}
+	#testimonials .testimonials__wrap {
+		padding: 50px 0;
+		margin-bottom: 60px;
+	}
+	#testimonials .testimonials__slider {
+		padding: 40px;
+	}
+	#testimonials .testimonials__slider .testimonials__item img {
+		margin-bottom: 10px;
+		max-width: 100px;
+	}
+	#testimonials .testimonials__slider .testimonials__item p {
+		margin-bottom: 20px;
+	}
+	#testimonials .testimonials__slider .testimonials__item .testimonials__info .name {
+		font-size: 125%;
+	}
+	#testimonials .testimonials__slider .testimonials__item .testimonials__info .pos {
+		font-size: 70%;
+	}
+	#testimonials .statistics .stats__list li .stats__title {
+		font-size: 80%;
+	}
+	#testimonials .statistics .stats__list li .stats__number {
+		font-size: 300%;
+	}
+
+	/* contact
+	-------------------------------------------------------- */
+	#contact {
+		padding-bottom: 90px;
+	}
+	#contact .contact__wrap {
+		padding: 50px;
+		background-size: 200px, 110px;
+	}
+	#contact .contact__wrap .contact__title {
+		margin-right: 20px;
+		font-size: 150%;
+	}
+
+	/* footer
+	-------------------------------------------------------- */
+	footer {
+		padding-top: 90px;
+	}
+	footer .footer__inner .logo {
+		margin: 0 auto 50px;
+		max-width: 140px;
+	}
+	footer .footer__inner .footer__info {
+		display: block;
+		margin-bottom: 50px;
+	}
+	footer .footer__inner .footer__info .footer__item {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	footer .footer__inner .footer__info .footer__item::before {
+		display: none;
+	}
+	footer .footer__inner .footer__info .footer__item .big__title {
+		padding: 35px 0 5px;
+		font-size: 110%;
+		background-size: 30px;
+	}
+	footer .copyright {
+		padding: 15px 0;
+	}
+	footer .footer__inner .footer__links {
+		margin-bottom: 60px;
+	}
+}
+
+@media screen and ( max-width : 640px ) {
+	/* common
+	-------------------------------------------------------- */
+	section,
+	.section__style01 {
+		padding: 40px 0;
+	}
+	.main__title {
+		font-size: 180%;
+	}
+
+	/* services
+	-------------------------------------------------------- */
+	#services {
+		padding-bottom: 40px;
+	}
+	#services .services__list li,
+	#services .services__list li:nth-child(even) {
+		margin: 0 auto 15px;
+		float: none;
+		width: 100%;
+	}
+
+	/* portfolio
+	-------------------------------------------------------- */
+	#portfolio {
+		padding: 100px 0;
+	}
+	#portfolio::before,
+	#portfolio::after {
+		height: 45px;
+	}
+	.portfolio__wrap .portfolio__item,
+	.portfolio__wrap .portfolio__item:nth-child(3n) {
+		margin: 0 2.5% 2.5% 0;
+		float: none;
+		max-width: none;
+		width: 48.7%;
+	}
+	.portfolio__wrap .portfolio__item:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	/* team
+	-------------------------------------------------------- */
+	#team .team__wrap .team__item {
+		margin: 0 auto 80px;
+		width: 100%;
+	}
+	#team .team__wrap .team__item .team__info {
+		bottom: -50px;
+		padding: 15px;
+	}
+	#team .team__wrap .team__item .team__info .team__name {
+		font-size: 120%;
+	}
+	#team .team__wrap .team__item .team__info .team__pos {
+		font-size: 70%;
+	}
+
+	/* testimonials
+	-------------------------------------------------------- */
+	#testimonials {
+		padding-top: 70px;
+	}
+	#testimonials .main__title {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	#testimonials .main__title br {
+		display: none;
+	}
+	#testimonials .testimonials__wrap {
+		display: block;
+		padding: 40px 0;
+		margin-bottom: 40px;
+	}
+	#testimonials .testimonials__slider {
+		padding: 30px 20px;
+		max-width: none;
+		width: 100%;
+	}
+	#testimonials .testimonials__slider .bx-wrapper .bx-controls {
+		right: 0;
+		bottom: 25px;
+		display: flex;
+		justify-content: center;
+		margin: auto;
+	}
+	#testimonials .statistics {
+		padding: 20px;
+	}
+	#testimonials .statistics .stats__list {
+		flex-wrap: wrap;
+	}
+	#testimonials .statistics .stats__list li {
+		margin-bottom: 20px;
+		width: 50%;
+	}
+	#testimonials .statistics .stats__list li:nth-child(3),
+	#testimonials .statistics .stats__list li:last-child {
+		margin-bottom: 0;
+	}
+	#testimonials .statistics .stats__list li .stats__title {
+		padding: 0 10px;
+	}
+	#testimonials .statistics .stats__list li .stats__title::before,
+	#testimonials .statistics .stats__list li .stats__title::after {
+		height: 3px;
+		width: 3px;
+	}
+
+	/* contact
+	-------------------------------------------------------- */
+	#contact {
+		padding-bottom: 70px;
+	}
+	#contact .contact__wrap {
+		display: block;
+		padding: 40px;
+	}
+	#contact .contact__wrap .contact__title {
+		margin: 0 auto 15px;
+		text-align: center;
+	}
+	#contact .contact__wrap .button {
+		margin: 0 auto;
+	}
+
+	/* footer
+	-------------------------------------------------------- */
+	footer {
+		padding-top: 70px;
+	}
+	footer .footer__inner .logo {
+		max-width: 130px;
+	}
+	footer .footer__inner .footer__links {
+		display: block;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+	footer .footer__inner .footer__links li {
+		margin: 0 auto 10px;
+	}
+}
+
+
+@media screen and ( max-width : 480px ) {
+	/* portfolio
+	-------------------------------------------------------- */
+	.portfolio__wrap .portfolio__item,
+	.portfolio__wrap .portfolio__item:nth-child(3n) {
+		margin: 0 auto 20px;
+		width: 100%;
+	}
 }
